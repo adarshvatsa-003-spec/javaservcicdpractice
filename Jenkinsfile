@@ -4,17 +4,20 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo '✅ Building...'
+                echo '✅ Running Maven build...'
+                sh 'mvn clean package'
             }
         }
+
         stage('Test') {
             steps {
-                echo '✅ Testing...'
+                echo '✅ (Optional) Run tests here'
             }
         }
+
         stage('Deploy') {
             steps {
-                echo '✅ Deploying...'
+                echo '✅ (Placeholder) Docker build & ECR push later'
             }
         }
     }
