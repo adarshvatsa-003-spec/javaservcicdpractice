@@ -27,7 +27,7 @@ stages {
             sh '''
                 aws ecs update-service \
                     --cluster java-asg-cluster \
-                    --service java-app-service \
+                    --service java-docker-task-service-rla7xzkg \
                     --force-new-deployment \
                     --region us-east-1
             '''
