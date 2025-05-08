@@ -18,7 +18,7 @@ public static void main(String[] args) throws IOException {
 
 static class HelloHandler implements HttpHandler {
     public void handle(HttpExchange t) throws IOException {
-        String response = "<html><body style='background-color:coral;'>" +
+        String response = "<html><body style='background-color:crimson;'>" +
                             "<h1 style='color:white;'>Hello from JAR-based Java App!</h1>" +
                             "</body></html>";
         t.sendResponseHeaders(200, response.length());
